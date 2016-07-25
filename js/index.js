@@ -1,6 +1,6 @@
 $(function(){
 
-    $('.container').fullpage({
+    $('.containers').fullpage({
         onLeave: function(index, nextIndex, direction){
             $('.in-left').attr("id","");
             $('.in-right').attr("id","");
