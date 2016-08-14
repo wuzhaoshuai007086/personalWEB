@@ -1,29 +1,43 @@
-$(function(){
+window.onload=function(){
+	var btn=document.querySelector('.btn');
+	var minnav=document.querySelector('.min-nav');
+	btn.oncliak=function(){	
+		var id=minnav.getAttribute("id");
+		if (id=="active") {
+			minnav.setAttribute("id","");
+		}else{
+			minnav.setAttribute("id","active");
+		}
+	}
+	touch.on(btn, 'tap', function(ev){
+		var id=minnav.getAttribute("id");
+		if (id=="active") {
+			minnav.setAttribute("id","");
+		}else{
+			minnav.setAttribute("id","active");
+		}
+	})
+	//楼层跳转
+	var floor=document.querySelectorAll('.floor');
+	var eleList=document.querySelectorAll('.nav li');
+	var eleList2=document.querySelectorAll('.min-nav li');
+	var flTop=[];
+	for(var i=0;i<floor.length;i++){
+		flTop.push(floor[i].offsetTop);  //把每层楼的offsetTop值保存到数组中
+	}
+	for(var i=0; i<floor.length; i++){
+		eleList2[i].index=i;
+		eleList[i].index=i;
+		eleList[i].onclick=function(){  //类似于选项卡
+			 animate(document.body,{scrollTop:flTop[this.index]});
+			 animate(document.documentElement,{scrollTop:flTop[this.index]});
+			 console.log(flTop[this.index]);
 
-    $('.containers').fullpage({
-        onLeave: function(index, nextIndex, direction){
-            $('.in-left').attr("id","");
-            $('.in-right').attr("id","");
-            $('.in-top').attr("id","");
-            $('.in-bottom').attr("id","");
-            $('.in-top2').attr("id","");
+		};
+		touch.on(eleList2[i],'tap', function(ev){
+			 animate(document.body,{scrollTop:flTop[this.index]},function(){
+			 });
 
-        },
-        afterLoad: function(anchorLink, index){
-            $('.in-left').attr("id","active");
-            $('.in-right').attr("id","active2");
-            $('.in-top').attr("id","active4");
-            $('.in-bottom').attr("id","active3");
-            $('.in-top2').attr("id","active5");
-
-        },
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-        menu: '#menu'
-
-    })
-    $(".downs").click(function(){
-    	 $.fn.fullpage.moveSectionDown();
-    })
-
-
-}); 
+		})
+	}	
+}

@@ -2,259 +2,488 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-	<title>个人站</title>
-	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<title>个人主页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/response.css">
+	<link rel="stylesheet" href="css/iconfont.css">
 	<link rel="stylesheet" href="css/index.css">
-	<script src="js/jquery-1.8.3.min.js"></script>
-	<script src="js/jquery.fullPage.min.js"></script>
-	<script src="js/index.js"></script>
+	<script src='js/touch-0.2.14.min.js'></script>
+	<script src='js/animate.js'></script>
+	<script src='js/index.js'></script>
 </head>
-<script>
-</script>
 <body>
-<!-- danhang -->
-<ul id="menu">
-	<li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
-	<li data-menuanchor="page2"><a href="#page2">简介</a></li>
-	<li data-menuanchor="page3"><a href="#page3">作品</a></li>
-	<li data-menuanchor="page4"><a href="#page4">经历</a></li>
-	<li data-menuanchor="page5"><a href="#page5">技能</a></li>
-	<li data-menuanchor="page6"><a href="#page6">联系</a></li>
-</ul>
-<!-- danhang end-->
-<div class="containers ">
-	<div class="section">
-		<div class="inner">
-			<div class="left">
-				<h3>灵感 代码 梦想 未来</h3>
+	<div class="container-fluid header floor">
+			<ul class="nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">简介</a></li>
+				<li><a href="#">技能</a></li>
+				<li><a href="#">作品</a></li>
+				<li><a href="#">联系</a></li>
+			</ul>
+			<div class="btn iconfont">&#xe600;</div>
+			<ul class="min-nav">
+				<li>首页</li>
+				<li>简介</li>
+				<li>技能</li>
+				<li>作品</li>
+				<li>联系</li>
+			</ul>
+			<div class="banner">
+				<h1>wuzhaoshuai</h1>
+				<p>Love to Design and tourism</p>
+				<ul>
+					<li><a href="#">联系我</a></li>
+					<li><a href="#">关于我</a></li>
+				</ul>
 			</div>
-	        <div class="right">
-	        	<h2>层出不穷的框架让人兴奋，而不同框架背后的思路却在逐渐统一</h2>
-	        </div>
-	        
+	</div>
+	<div class="container-fluid about floor">
+		<div class="container">
+		<div class="head-section block-center row">
+			<h2>About Me</h2>
+			<h5 style="color:black;font-weight:bolder;font-family:'微软雅黑'">关&nbsp;于&nbsp;·&nbsp;我</h5>
+			<span></span>
 		</div>
-		<div class="bottom">
-				<div class="downs"></div>
+		<div class="about-grids row">
+			<div class="col-md-6 about-left-grid">
+				<h3>武赵帅</h3>
+				<span>前端工程师,The front engineer </span>
+				<p>我精通HTML，CSS，JAVASCRIPT，HQUERY，CSS3，HTML5等多种结构框架编程语言，熟练运用编程软件和图形处理软件，熟悉各种网站的布局规格；能力较强，善于处理各种兼容性问题，在响应式方面有着广泛的兴趣，对于HTML5有着深层次的理解和认识。</p>
+				<p>我性格乐观，做事沉稳，对待工作认真，对IT行业有浓厚的兴趣爱好，经常性了解行业的发展状况，对一些新东西比较执着；我乐于和别人合作，这样能够达到更好的效果。</p>
+			</div>
+
+			<div class="col-xs-12 col-md-6 about-right-grid">
+				<a class="popup-with-zoom-anim" href="#small-dialog"><img src="images/21b0487e9cbe066252483b542c68a843.gif" title="name" /></a>
+			</div>
+		</div>
 		</div>
 	</div>
-	<div class="section container">
-		<div class="inner row">
-			<div class="in-left   col-md-6  col-xs-12 ">
-					<div class="top">
-						
+	<div class="container-fluid skill floor">
+				<div class="container">
+		<div class="head-section block-center row">
+			<h2>MY SKILLS</h2>
+			<h5 style="color:black;font-weight:bolder;font-family:'微软雅黑'">我 的 技 能</h5>
+			<span></span>
+		</div>
+		<div class="skill-grids row">
+			<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
 					</div>
-					<div class="bottom">
-					<p>我叫武赵帅</p>
-					<p>出生于1991.10</p>
-					<p>一名前端研发工程师</p>
-					<p>本科学历</p>
-					</div>	
+					<canvas id="skillCanvas" width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">HTML
+					</div>
+					<p class="excerpt"> 
+					</p>
+				</div>
 			</div>
-			<div class="in-right col-md-6  col-xs-12  ">
-				<div class="one"></div>
-				<div class="two"></div>
-				<div class="three"></div>
-				<div class="four"></div>
-				<p>2016年毕业于吕梁学院</p>
-				<p>喜欢优雅的代码，代码强迫症患者</p>
-				<p>相信爱拼才会赢</p>
-				<p>喜欢读书</p>
-			</div>	
-		</div>
-		<div class="bottom">
-				<div class="downs"></div>
-		</div>
-	</div>
-	<div class="section">
-		<div class="inner">
-			<div class="in-top">
-				<div class="work container">
-					<ul class="row">
-						<li class="col-xs-6 col-sm-4 col-lg-3">
-						<a href="http://www.taihuadichan.com/index.php" target=_blank>
-							<img src="images/u=1150811574,3977450158&fm=15&gp=0.jpg" alt="">
-						</a>
-						</li >
-						<li class="col-xs-6 col-sm-4 col-lg-3">
-						<a href="https://wuzhaoshuai007086.github.io/typegame/" target=_blank>
-							<img src="images/2016-07-24_054104.jpg" alt="">
-						</a>
-						</li>
-						<li class="col-xs-6 col-sm-4 col-lg-3">
-						<a href="https://wuzhaoshuai007086.github.io/todo2/" target=_blank>
-							<img src="images/u=280204403,140723346&fm=21&gp=0.jpg" alt="">
-						</a>
-						</li>
-						<li class="col-xs-6 col-sm-4 col-lg-3">
-						<a href="https://wuzhaoshuai007086.github.io/iCloud/" target=_blank>
-							<img src="images/20130711092240451.jpg" alt="">
-						</a>
-						</li>
-						<li class="col-xs-6 col-sm-4 col-lg-3">
-						<a href="https://wuzhaoshuai007086.github.io/bai/" target=_blank>
-							<img src="images/2016-07-24_055304.jpg" alt="">
-						</a>
-						</li>
-						<li class="col-xs-6 col-sm-4 col-lg-3">
-						<a href="https://wuzhaoshuai007086.github.io/bdwl/" target=_blank> 
-							<img src="images/2016-07-24_055548.jpg" alt="">
-						</a>
-						</li>
-						<li class="col-xs-6  col-sm-4 col-lg-3">
-						<a href="https://wuzhaoshuai007086.github.io/Apple/" target=_blank>
-							<img src="images/u=2603053199,3570356589&fm=21&gp=0.jpg" alt="">
-						</a>
-						</li>
-						<li class="col-xs-6  col-sm-4 col-lg-3">
-						<a href="https://wuzhaoshuai007086.github.io/jingdong/" target=_blank>
-							<img src="images/u=3181303919,1143137132&fm=116&gp=0.jpg" alt="">
-						</a>
-						</li>
-
-					</ul>
-
+			<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
+					</div>
+					<canvas id="skillCanvas2"  width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">CSS
+					</div>
+					<p class="excerpt"> 
+					</p>
+				</div>
+			</div>
+			<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
+					</div>
+					<canvas id="skillCanvas3"  width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">HTML5
+					</div>
+					<p class="excerpt"> 
+					</p>
+				</div>
+			</div>
+						<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
+					</div>
+					<canvas id="skillCanvas4"  width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">CSS3
+					</div>
+					<p class="excerpt"> 
+					</p>
+				</div>
+			</div>
+						<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
+					</div>
+					<canvas id="skillCanvas5"  width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">Javascript
+					</div>
+					<p class="excerpt"> 
+					</p>
+				</div>
+			</div>
+						<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
+					</div>
+					<canvas id="skillCanvas6"  width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">JQuery
+					</div>
+					<p class="excerpt"> 
+					</p>
+				</div>
+			</div>
+						<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
+					</div>
+					<canvas id="skillCanvas7"  width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">Ajax
+					</div>
+					<p class="excerpt"> 
+					</p>
+				</div>
+			</div>
+			<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
+					</div>
+					<canvas id="skillCanvas8"  width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">Bootstrap
+					</div>
+					<p class="excerpt"> 
+					</p>
+				</div>
+			</div>
+			<div class="skills-item col-xs-12 col-hh-50 col-sm-20">
+				<div class="skill-progress" >
+					<div class="skill-number" style="display: block;">精通
+					</div>
+					<canvas id="skillCanvas9"  width="170" height="170" style='width: 170px; height: 170px;'>
+					</canvas>
+				</div>
+				<div class="skill-content">
+					<div class="skill-title">Angularjs
+					</div>
+					<p class="excerpt"> 
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="bottom">
-				<div class="downs"></div>
 		</div>
 	</div>
-	<div class="section">
-		<div class="inner row">
-			<div class="in-top col-xs-12 col-md-4">
-				<ul>
-<!-- 					<li>2015年6月-2015年12月</li>
-					<li>山西优逸客科技有限公司</li>
-					<li>培训学习</li> -->
-				</ul>
-			</div>	
-			<div class="in-top in-top2 col-xs-12 col-md-4">
-				<ul>
-<!-- 					<li>2016年1月-2016年6月</li>
-					<li>成都兰途网络科技有限公司</li>
-					<li>前端技术部</li>
-					<li>负责快速构建高质量移动app页面</li>
-					<li>用less预编译css</li>
-					<li>使用原生JS+angularJS进行前端开发</li>
-					<li>使用HTML5+进行app打包</li> -->
-					<li>2015年6月-2016年6月</li>
-					<li>山西优联科技有限公司</li>
-					<li>前端技术部</li>
-					<li>web前段核心模块的实现工作根据产品原型设计图开发前端代码，负责前端页面布局，js动效的添加以及实现一些数据交互，并对代码质量优化；解决不同的浏览器及不同版本的兼容问题。</li>
-				</ul>
-			</div>	
-			<div class="in-top col-xs-12 col-md-4">
+	<!-- portfolio -->
+	<div id="port" class="container-fluid works  portfolio floor">
+			<div class="container">
+				<!-- head-section -->
+				<div class="head-section text-center">
+					<h2>MY WORKS</h2>
+					<h5 style="color:black;font-weight:bolder;font-family:'微软雅黑'">我&nbsp;的&nbsp;作&nbsp;品</h5>
+					<span></span>
+				</div>
+				<!-- /head-section -->
+				<!-- portfolio-grids -->
+				<div class="portfolio-grids">
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/qqmusic.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>QQ音乐</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/qqmusic/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
 
-			</div>	
-		</div>
-		<div class="bottom">
-				<div class="downs"></div>
-		</div>
-	</div>
-	<div class="section">
-		<div class="inner row">
-			<div class="in-left  col-xs-12 col-md-6 ">
-				<ul>
-					<li>掌握技能</li>
-					<li><span></span>HTML/CSS/JavaScript页面架构和布局</li>
-					<li><span></span>主流浏览器的兼容性</li>
-					<li><span></span>AJAX</li>
-					<li><span></span>JQuery库</li>
-					<li><span></span>Anguarjs前端开发框架</li>
-					<li><span></span>Bootstrap响应式框架</li>
-					<li><span></span>HTML5，CSS3</li>
-					<li><span></span>HTML5+移动APP开发环境</li>
-				</ul>
-			</div>
-			<div class="in-right  col-xs-12 col-md-6 ">
-				<canvas width='440' height='330'></canvas>
-			</div>	
-		</div>
-		<div class="bottom">
-				<div class="downs"></div>
-		</div>
-	</div>
-	<div class="section">
-		<div class="inner">
-			<div class="in-left">
+					</div>
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/tianmao.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>天猫</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/tianmao/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
 
-			</div>
-			<div class="in-right"></div>	
-		</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/xiaomi.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>小米</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/new-xiaomi/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
+
+					</div>
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/apple.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>Apple</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/new-apple/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
+
+					</div>                                        
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/qipang.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>五子棋电脑版</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/canvas-fir/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
+
+					</div>
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/niao.jpg" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>像素鸟</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/new-flappy-bird/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
+
+					</div>
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/1haodian.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>1号店</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/new-1haodian/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
+
+					</div>
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/tanchise.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>贪吃蛇</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/new-tanchise/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>					
+							</div>
+						</div>
+
+					</div>
+					<div class="portfolio-grid about-grid">
+						
+						<div class="view view-first">
+							<img src="images/huaban.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>画板</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/new-angluar-sketch/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/icloud.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>icloud</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/angular-icloud-reminder/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>	
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/fullpages.jpg" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>fullpage</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/fullpage/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>	
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/fir.jpg" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>fir手机版</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/fir/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>	
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/shaolei.jpg" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>扫雷</h3>
+								<input type="button" onclick="window.open('http://TIANYUXIN.github.io/shaolei/')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>	
+							</div>
+						</div>
+					</div>
+                </div>
+                <!-- portfolio-grids -->
+            </div>
+        </div>
+        <!-- /portfolio -->
+        <!-- blog -->
+        <div id="blog" class="blog">
+        	<div class="container">
+        		<!-- head-section -->
+        		<div class="head-section text-center">
+        			<h2>PS and AI works</h2>
+        			<span> </span>
+        		</div>
+        		<!-- /head-section -->
+        		<!-- blog-articals -->
+        		
+        		<div class="blog-articals">
+        			<figure class="image-show-grid"></figure>
+        			<div class="blog-artical">
+        				<div class="blog-artical-pic">
+        					<img src="images/yingxiang.png" title="name" />
+        				</div>
+        				<div class="blog-artical-info">
+        					<h3><a href="#">Design Trend 2015</a></h3>
+        					<span>Bruno mars | <a href="#">13 comments</a></span>
+        					<a class="more-btn" href="#">See More</a>
+        					<div class="clearfix"> </div>
+        				</div>
+        			</div>
+        			<div class="blog-artical">
+        				<div class="blog-artical-pic">
+        					<img src="images/xiangji.jpg" title="name" />
+        				</div>
+        				<div class="blog-artical-info">
+        					<h3><a href="#">Design Trend 2015</a></h3>
+        					<span>Bruno mars | <a href="#">13 comments</a></span>
+        					<a class="more-btn" href="#">See More</a>
+        					<div class="clearfix"> </div>
+        				</div>
+        			</div>
+        			<div class="blog-artical">
+        				<div class="blog-artical-pic">
+        					<img src="images/touxiang.jpg" title="name" />
+        				</div>
+        				<div class="blog-artical-info">
+        					<h3><a href="#">Design Trend 2015</a></h3>
+        					<span>Bruno mars | <a href="#">13 comments</a></span>
+        					<a class="more-btn" href="#">See More</a>
+        					<div class="clearfix"> </div>
+        				</div>
+        			</div>
+        			
+        			<div class="clearfix"> </div>
+        		</div>
+        		<div class="clearfix"> </div>
+        		<!-- blog-articals -->
+        		<p class="more-articals text-center"></p>
+        	</div>
+        </div>
+        <!-- /blog -->	
+	
+	<div class="container-fluid contact floor projects">
+        	<div class="container">
+        		<div class="project-grids">
+        			<h1>CONTACT ME</h1>
+        			<h3>天津</h3>
+        			<h3>Tel:18234836370</h3>
+        			<h3>QQ:396181651</h3>
+        			<h3>Email:wzs5418@163.com</h3>
+        			<div class="clearfix"> </div>
+        		</div>
+        	</div>
 	</div>
-</div>
 </body>
 <script>
-// var s=35;
-// var w=360/100;
-	var can=document.querySelector('canvas');
-	var cobj=can.getContext("2d");
-	cobj.fillStyle="rgba(0,255,0,0.5)";
-	
-	cobj.beginPath();
-	cobj.arc(220,165,150,0,Math.PI*2,false);
-	cobj.fill();
-	cobj.closePath();
-
-	cobj.fillStyle="blue";
-	cobj.beginPath();
-	cobj.moveTo(220,165);
-	// alert(Math.PI/100*s);
-	cobj.arc(220,165,150,-Math.PI/2,Math.PI/100*35-Math.PI/2,false);	
-	cobj.fill();
-	cobj.closePath();
-
-	cobj.fillStyle="yellow";
-	cobj.beginPath();
-	cobj.moveTo(220,165);
-	// alert(Math.PI/100*s);
-	cobj.arc(220,165,150,Math.PI/100*35-Math.PI/2,Math.PI/100*70-Math.PI/2,false);	
-	cobj.fill();
-	cobj.closePath();
-
-	cobj.fillStyle="red";
-	cobj.beginPath();
-	cobj.moveTo(220,165);
-	// alert(Math.PI/100*s);
-	cobj.arc(220,165,150,Math.PI/100*70-Math.PI/2,Math.PI/100*100-Math.PI/2,false);	cobj.fill();
-	cobj.closePath();
-		cobj.fillStyle="#FF31F2";
-	cobj.beginPath();
-	cobj.moveTo(220,165);
-	// alert(Math.PI/100*s);
-	cobj.arc(220,165,150,Math.PI/100*100-Math.PI/2,Math.PI/100*120-Math.PI/2,false);	cobj.fill();
-	cobj.closePath();
-
-		cobj.fillStyle="#66D9EF";
-	cobj.beginPath();
-	cobj.moveTo(220,165);
-	// alert(Math.PI/100*s);
-	cobj.arc(220,165,150,Math.PI/100*120-Math.PI/2,Math.PI/100*135-Math.PI/2,false);	cobj.fill();
-	cobj.closePath();
-
-		cobj.fillStyle="black";
-	cobj.beginPath();
-	cobj.moveTo(220,165);
-	// alert(Math.PI/100*s);
-	cobj.arc(220,165,150,Math.PI/100*135-Math.PI/2,Math.PI/100*160-Math.PI/2,false);	cobj.fill();
-	cobj.closePath();
-
-			cobj.fillStyle="#8EC915";
-	cobj.beginPath();
-	cobj.moveTo(220,165);
-	// alert(Math.PI/100*s);
-	cobj.arc(220,165,150,Math.PI/100*160-Math.PI/2,Math.PI/100*180-Math.PI/2,false);	cobj.fill();
-	cobj.closePath();
-
-			cobj.fillStyle="#8481FF";
-	cobj.beginPath();
-	cobj.moveTo(220,165);
-	// alert(Math.PI/100*s);
-	cobj.arc(220,165,150,Math.PI/100*180-Math.PI/2,Math.PI/100*200-Math.PI/2,false);	cobj.fill();
-	cobj.closePath();
-	
+var can=document.querySelector('canvas');
+	var o=skillCanvas.getContext("2d");
+	var o2=skillCanvas2.getContext("2d");
+	var o3=skillCanvas3.getContext("2d");
+	var o4=skillCanvas4.getContext("2d");
+	var o5=skillCanvas5.getContext("2d");
+	var o6=skillCanvas6.getContext("2d");
+	var o7=skillCanvas7.getContext("2d");
+	var o8=skillCanvas8.getContext("2d");
+	var o9=skillCanvas9.getContext("2d");
+	ss(o,75);
+	ss(o2,75);
+	ss(o3,75);
+	ss(o4,75);
+	ss(o5,75);
+	ss(o6,75);
+	ss(o7,75);
+	ss(o8,75);
+	ss(o9,75);
+	function ss(o,b){
+	var t=setInterval(time,1000/b);
+	var s=0;
+	var b;
+	function time(){
+		o.clearRect(0,0,can.width,can.height);
+		s++;	
+	var ang=s/100*360;
+		if (s>=b) {
+			clearInterval(t);
+		};
+	o.save();
+	o.translate(can.width/2,can.width/2);
+	o.beginPath();
+	o.save();
+	o.rotate(-Math.PI/2);
+	o.strokeStyle="red"
+    o.lineWidth=can.width/15;
+    o.arc(0,0,can.width/2-5,0,ang*Math.PI/180);
+	o.stroke();
+	o.restore();
+	o.closePath();
+ //    o.font="50px arial";
+ //    o.textAlign  ='center';
+ //    o.textBaseline  ='middle';
+	// o.fillText('精通',0,0);
+	o.restore();
+	}
+	}
 </script>
 </html>
